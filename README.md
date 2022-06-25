@@ -1,2 +1,2 @@
-# fvtt-trazzm-5e-sheet
-An updated dnd5e actor sheet for Foundry VTT
+# trazzm-5e-sheet
+ A condensed 5e character sheet based on the tidy5esheet. Much thanks to sdenec for inspiring my design!

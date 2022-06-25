@@ -1,0 +1,34 @@
+{
+	"name": "trazzm-5e-sheet",
+	"title": "Trazzm's 5e Sheet",
+	"description": "Replaces the default D&D 5e character and NPC sheet with an alternate layout focused on a more condensed UI",
+	"version": "0.0.1",
+	"author": "Trazzm",
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion": "0.6.4",
+	"systems": ["dnd5e"],
+	"esmodules": [
+		"./trazzm-5e-sheet.js",
+		"./trazzm-5e-favorites.js",
+		"./trazzm-5e-npc.js"
+	],
+	"styles": [
+		"./fonts/signika-negative/signika-negative.css",
+		"../fonts/modesto-condensed/modesto-condensed.css",
+		"./styles/trazzm-5e-sheet.css",
+		"./styles/trazzm-5e-items.css",
+		"./styles/trazzm-5e-modules.css",
+		"./styles/trazzm-5e-npc.css",
+		"./styles/darkmode/trazzm-5e-darksheet.css",
+		"./styles/darkmode/trazzm-5e-darknpc.css",
+		"./styles/darkmode/trazzm-5e-darkitems.css",
+		"./styles/darkmode/trazzm-5e-darkmodules.css"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	]
+}

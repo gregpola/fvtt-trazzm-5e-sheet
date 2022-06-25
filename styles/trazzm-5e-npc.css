@@ -1,0 +1,365 @@
+.trazzm-5e-header-npc {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 3px;
+  background: rgba(255, 255, 255, .2);
+}
+
+.trazzm-5e-npc-profile {
+  width: 125px;
+  height: 125px;
+  position: relative;
+}
+
+.trazzm-5e-npc-details {
+  margin-left: 5px;
+  width: 100%;
+
+}
+
+.trazzm-5e-npc-general-information {
+  justify-content: space-between;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--default-tertiary-color);
+}
+
+div.ddbCharacterName {
+  width: 40px;
+  flex-grow: 0;
+}
+
+.trazzm-5e-npc-name {
+  /*flex-direction: row;*/
+  /*flex-wrap: nowrap;*/
+  text-align: left;
+  vertical-align: center;
+}
+
+.npc-name-race {
+  flex-direction: column-reverse;
+  margin-bottom: 3px;
+  position: relative;
+  display: block;
+}
+
+.trazzm-5e-npc-type {
+  flex-wrap: nowrap;
+  flex-grow: 0;
+}
+
+.trazzm-5e-flex-static {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.trazzm-5e-npc-challenge {
+  flex-wrap: nowrap;
+  text-align: center;
+  font-family: var(--font-condensed);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 3px;
+  background: var(--default-faint-color);
+  color: rgba(0, 0, 0, .6);
+}
+
+/* Header Attributes */
+.npc-header-attributes {
+  flex-wrap: nowrap;
+  margin: 1px;
+  padding: 1px;
+  border-top: 1px solid var(--default-tertiary-color);
+}
+
+.npc-header-attributes li:first-child {
+  border: none;
+}
+
+.npc-header-attributes .value span,
+.npc-header-attributes .value p,
+.npc-header-attributes .value input {
+  height: 20px;
+  padding: 2px;
+}
+
+.npc-header-attributes .value span,
+.npc-header-attributes .value p {
+  line-height: 18px;
+}
+
+h4.npc-box-title {
+  height: 14px;
+  line-height: 12px;
+  margin: 2px 4px 2px;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4b4a44;
+  border-bottom: 1px solid #c9c7b8;
+}
+
+.npc-header-attributes .value {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 2px 0 2px 0;
+  line-height: 20px;
+}
+
+.npc-header-attributes .ac-display {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.npc-header-attributes .prof-display {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.npc-header-attributes .value-footer {
+  /*font-family: "Signika", sans-serif;*/
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.npc-header-attribute {
+  height: 55px;
+  flex: 1 1 100px;
+  flex-wrap: nowrap;
+  text-align: center;
+  border-left: 1px solid var(--default-faint-color);
+}
+
+.npc-attribute-name {
+  font-size: 20px;
+  line-height: 16px;
+  height: 20px;
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.npc-attribute-name input {
+  margin: 0;
+}
+
+.npc-attribute-name::after {
+  display: block;
+  content: '';
+  height: 0;
+  width: 60%;
+  border-bottom: 1px solid var(--default-faint-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.npc-hp-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 1px;
+  font-size: 18px;
+}
+
+.npc-ability-scores {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80px;
+  height: auto;
+  justify-content: flex-start;
+  overflow: initial;
+  padding: 0px;
+  margin: 3px;
+}
+
+.npc-ability-scores .ability {
+  margin: 1px;
+  padding: 1px;
+  height: unset;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--default-faint-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.npc-ability-scores .ability:last-child {
+  border-bottom: 1px solid var(--default-faint-color);
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 0;
+}
+
+.npc-ability-scores .ability .ability-name {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 2px 0 2px 0;
+  margin: 0;
+  border-bottom: 1px solid var(--default-faint-color);
+}
+
+.npc-ability-scores .ability input.ability-score {
+  height: 25px;
+  width: 25px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.npc-ability-scores .ability .ability-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.npc-ability-scores .ability input.ability-score:hover + .ability-modifiers {
+  visibility: visible;
+}
+
+.npc-ability-scores .ability .ability-modifiers {
+  /*height: auto;*/
+  /*width: 100%;*/
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: initial;
+  position: static;
+  font-size: 10px;
+}
+
+.npc-ability-scores .ability .ability-mod,
+.npc-ability-scores .ability .ability-save {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  opacity: .4;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.npc-ability-scores .ability:hover .ability-mod,
+.npc-ability-scores .ability:hover .ability-save {
+  opacity: 1;
+  text-shadow: none;
+}
+
+.npc-ability-scores .ability .proficiency-toggle {
+  font-size: 10px;
+  line-height: 10px;
+  opacity: .4;
+  transition: opacity .3s ease;
+}
+
+.npc-ability-scores .ability .ability-modifiers .ability-proficiency {
+  line-height: 10px;
+}
+
+.npc-ability-scores .ability:hover .proficiency-toggle {
+  opacity: 1;
+}
+
+.npc-left-side-pane {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 0;
+  height: auto;
+  width: 50%;
+}
+
+ul.npc-left-side-pane {
+  list-style: none;
+}
+
+.npc-right-pane ul.attributes {
+  margin: 0;
+  border: 1px solid var(--default-faint-color);
+  border-radius: 5px;
+  flex: initial;
+}
+
+.npc-right-pane ul.attributes li.attribute {
+  margin: 0 0 1px 0;
+  padding: 1px 0 0 0;
+  height: 46px;
+  position: relative;
+  border: none;
+  border-radius: 0;
+  border-left: 1px solid var(--default-faint-color);
+  border-top: 1px solid var(--default-faint-color);
+  flex: 1 0 33%;
+}
+
+.npc-right-pane ul.attributes li.attribute:nth-child(3n+1) {
+  border-left: 0;
+}
+
+.npc-right-pane ul.attributes li.attribute:nth-child(-n+3) {
+  border-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.npc-spellcasting-ability {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  position: sticky;
+  align-items: center;
+  background: url(../../../systems/dnd5e/ui/parchment.jpg) repeat fixed;
+}
+
+.npc-spellcasting-ability h3.spell-dc {
+  font-size: 20px;
+}
+
+.npc-spellcasting-ability select {
+  flex: 0 0 90px;
+  margin-left: 4px;
+  font-family: "Signika", sans-serif;
+}
+
+.npc-spellcasting-ability input {
+  flex: 0 0 20px;
+}
+
+.npc-caster-lvl,
+.npc-caster-dc {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 12.5%;
+  flex-wrap: nowrap;
+  text-align: left;
+  margin-right: 5px;
+  padding: 0;
+  align-items: center;
+  vertical-align: center;
+}
+
+.npc-caster-ability {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 25%;
+  flex-wrap: nowrap;
+  text-align: left;
+  margin-right: 5px;
+  padding: 0;
+  align-items: center;
+  vertical-align: center;
+}

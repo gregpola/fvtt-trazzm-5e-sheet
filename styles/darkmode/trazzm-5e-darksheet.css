@@ -1,0 +1,600 @@
+:root {
+  --darkmode-primary-color: rgba(255,255,255,.7);
+  --darkmode-secondary-color: rgba(255,255,255,.55);
+  --darkmode-tertiary-color: rgba(255,255,255,.35);
+  --darkmode-light-color: rgba(255,255,255,.15);
+  --darkmode-faint-color: rgba(255,255,255,.075);
+
+  --darkmode-primary-accent: #48BB78;
+  --darkmode-secondary-accent: rgba(0,150,150,.325);
+  --danger-500: #F56565;
+  --danger-700: #C53030;
+
+  --default-underline-color: rgba(255,255,255,.55);
+}
+
+/* Sheet Content */
+.trazzm-5eDark .trazzm-5e.sheet .window-content {
+  color: var(--darkmode-primary-color);
+}
+
+/* Sheet Background */
+.trazzm-5eDark .trazzm-5e-sheet {
+  /*background-color: #121212;*/
+  background-color: rgba(0,0,0,.91);
+  font-family: "Signika Negative", sans-serif;
+}
+
+/* Sheet Header */
+.trazzm-5eDark .trazzm-5e-header {
+  background: rgba(255,255,255,.05);
+}
+
+/* Portrait */
+.trazzm-5eDark .trazzm-5e.sheet.actor .portrait {
+  box-shadow: 0 0 10px rgba(0,0,0,.95) inset;
+  border: 1px solid rgba(0,0,0,.95);
+}
+
+/* Character Level */
+.trazzm-5eDark .trazzm-5e.sheet.actor .level {
+  background: var(--darkmode-tertiary-color);
+  color: rgba(0,0,0,.6);
+}
+
+/* Character Classes */
+.trazzm-5eDark .trazzm-5e.sheet.actor .class-list {
+  color: var(--darkmode-secondary-color);  
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .class-list .subclass-info span {
+  background: var(--darkmode-tertiary-color);
+  color: rgba(0,0,0,.87);
+}
+
+.trazzm-5eDark.sheet.actor h4.box-title {
+  height: 18px;
+  line-height: 16px;
+  margin: 4px 8px 2px;
+  font-family: "Modesto Condensed", "Palatino Linotype", serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--darkmode-primary-color);
+  border-bottom: 1px solid var(--default-underline-color);
+}
+
+  /* Character Summary */
+.trazzm-5eDark .trazzm-5e.sheet.actor .origin-summary {
+  border-bottom: 1px solid var(--darkmode-light-color);
+  border-top: 1px solid var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .attribute-name::after {
+  border-color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .origin-summary li span::after {
+  background: var(--darkmode-primary-color);
+}
+
+/* Text color */
+.trazzm-5eDark .trazzm-5e.sheet.actor input[type="text"] {
+  color: var(--darkmode-primary-color);  
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor input[type="text"]::placeholder
+/*.trazzm-5eDark .dnd5e input[type="text"]::placeholder */
+{
+  color: var(--darkmode-tertiary-color);
+}
+/*
+.trazzm-5eDark .dnd5e input[type="text"] {
+  color: var(--darkmode-primary-color);
+}*/
+
+/* Sheet Navigation */
+.trazzm-5eDark .trazzm-5e.sheet.actor .item[data-tab="attributes"] i {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e-navigation .item {
+  background: rgba(255,255,255,.05);
+  border: none;
+  box-shadow: 0 1px 0 0 var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e-navigation .item:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e-navigation .item.active {
+  color: var(--darkmode-primary-color);
+    background: transparent;
+  box-shadow: 
+    -1px 0 0 0 var(--darkmode-light-color),
+    1px 0 0 0 var(--darkmode-light-color),
+    0 -1px 0 0 var(--darkmode-light-color),
+    0 0 0 0 var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e-navigation .item:first-child.active {
+  box-shadow: 
+    0 0 0 0 var(--darkmode-light-color),
+    1px 0 0 0 var(--darkmode-light-color),
+    0 -1px 0 0 var(--darkmode-light-color),
+    0 0 0 0 var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e-navigation .item:last-child.active {
+  box-shadow: 
+    -1px 0 0 0 var(--darkmode-light-color),
+    0 0 0 0 var(--darkmode-light-color),
+    0 -1px 0 0 var(--darkmode-light-color),
+    0 0 0 0 var(--darkmode-light-color);
+}
+
+/* Ability Scores */
+.trazzm-5eDark .trazzm-5e.sheet.actor .ability-scores .ability {
+  border-color: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .ability-scores .ability .ability-mod:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .ability-scores .ability .ability-save:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .proficient .proficiency-toggle {
+  color: var(--darkmode-primary-color);
+}
+
+/* Skill List */
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.skills-list {
+  border: 1px solid var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.dnd5e.sheet.actor ul.skills-list li.skill:nth-child(even) {
+  background: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.skills-list li.skill .skill-passive {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .proficiency-toggle.skill-proficiency {
+  color: var(--darkmode-tertiary-color);
+}
+
+/* Resources */
+.trazzm-5eDark .trazzm-5e.sheet.actor .center-pane ul.attributes {
+  border: 1px solid var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.attribute .attribute-value span.sep {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.attribute .attribute-header .res-options {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.attribute .attribute-header:hover .res-options {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.attribute .attribute-header .res-rest h4 {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.resource .attribute-header label.checkbox {
+  border: none;
+  background: var(--darkmode-light-color);
+  color: var(--darkmode-secondary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.resource .attribute-header label.checkbox:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.attributes li.resource .attribute-header input:checked + label.checkbox {
+  background: var(--darkmode-primary-accent);
+  color: var(--darkmode-primary-color);
+}
+
+/* Traits & Favorites */
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .toggle-traits,
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .configure-flags {
+  color: var(--darkmode-secondary-color);
+  border-color: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .toggle-traits:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .configure-flags:hover {
+  color: var(--darkmode-primary-color);
+}
+
+/** Traits **/
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits {
+  border-color: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits i.fas {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits a:hover i.fas {
+  color: var(--darkmode-primary-accent);
+  text-shadow: none;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .form-group.even {
+  background: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits label {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .senses div[contenteditable="true"]:before {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .tag {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .tag span {
+  background: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .actor-size {
+  background: var(--darkmode-light-color);
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .actor-size:hover {
+  background: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .actor-size:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .actor-size:focus {
+  box-shadow: none;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .traits .actor-size option {
+  color: #222;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet .traits .trait-selector:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+/** Favorites **/
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites {
+  border-color: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list:not(.inventory-header) .item {
+  background: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list:not(.inventory-header) .item.attuned,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list:not(.inventory-header) .item.prepared,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list:not(.inventory-header) .item.alwaysPrepared  {
+  background: var(--darkmode-secondary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-attuned {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item.inventory-header {
+  background: none;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header h3 {
+  color: var(--darkmode-tertiary-color);
+}
+
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-name h4 .info-icon {
+  color: var(--darkmode-light-color);
+  margin-left: 1px;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-name h4:hover .info-icon {
+  color: var(--darkmode-secondary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory .item-equipped .item-toggle,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellbook .spell-prepared .item-toggle {
+  color: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory .item-equipped .item-toggle:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellbook .spell-prepared .item-toggle:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory .item-equipped .item-toggle.active,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellbook .spell-prepared .item-toggle.active {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .state-display a {
+  color: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .state-display a:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .state-display a.active {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list :not(.inventory-header) .spell-comps,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list :not(.inventory-header) .item-action,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list :not(.inventory-header) .item-charges {
+  color: var(--darkmode-primary-color);
+} 
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list :not(.inventory-header) .spell-comps,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list :not(.inventory-header) .item-action,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list :not(.inventory-header) .item-charges {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-charges input {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spell-component.C,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spell-component.R {
+  background: var(--darkmode-tertiary-color);
+  color: rgba(0,0,0,.95);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header:first-child {
+  color: var(--darkmode-secondary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-detail,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-controls,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .spell-detail {
+  border-color: var(--darkmode-faint-color);
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots input,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots:hover input,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots:focus-within,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .inventory-header .spell-slots:focus-within input {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-controls a {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-controls a:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header .item-detail,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header.spellbook-header .spell-detail {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spell-slots input,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spell-slots span.sep,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header.spellbook-header .spell-detail .spell-max {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header.spellbook-header .spell-detail .slot-max-override i{
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header.spellbook-header .spell-detail .slot-max-override:hover i{
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header .item-detail i,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header .spell-detail svg,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header.spellbook-header .spell-detail i{
+  color: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-name:hover .item-image i {
+  color: rgba(255,255,255,.4);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-name:hover .item-image:hover i {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-currency .currency-item.convert a,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header .item-controls a.item-create {
+  background: var(--darkmode-light-color);
+  color: var(--darkmode-secondary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-currency .currency-item.convert a:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .inventory-header .item-controls a.item-create:hover {
+  background: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-charges:hover a.addCharges {
+  color: var(--darkmode-primary-accent);
+}
+
+/* XP Bar */
+.trazzm-5eDark .trazzm-5e.sheet.actor .xp-bar-total {
+  background: #444;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .xp-bar-current {
+  background: var(--darkmode-primary-accent);
+}
+
+/* Currency/Spellcasting Ability */
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-currency {
+  border-color: var(--darkmode-secondary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-currency .currency-item {
+  background: var(--darkmode-faint-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability select {
+  border: none;
+  background: var(--darkmode-light-color);
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability select:hover {
+  background: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability select:hover,
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability select:focus {
+  box-shadow: none;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .spellcasting-ability select option {
+  border-radius: none;
+  color: rgba(0,0,0,.95);
+}
+
+/* Encumbrance Bar */
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .encumbrance .encumbrance-bar {
+  background: var(--darkmode-primary-accent);
+}
+
+/* Notes */
+.trazzm-5eDark .trazzm-5e-sheet .note-entries article {
+  background: var(--darkmode-faint-color);
+  overflow: hidden;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .note-entries article .section-titles,
+.trazzm-5eDark .trazzm-5e.sheet.actor .note-entries article .section-titles input {
+}
+
+.trazzm-5eDark .trazzm-5e-sheet .note-entries article:hover .editor .editor-edit:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .note-entries article .section-titles {
+  border-color: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .tox.tox-tinymce {
+  background: var(--darkmode-tertiary-color);
+  box-shadow: 0 0 0 8px var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-filters h3,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-filters .filter-title {
+ color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-filters .trazzm-5e-delete-lock {
+  color: var(--darkmode-primary-color); 
+}
+
+.trazzm-5eDark .trazzm-5e-sheet .sheet-body .trazzm-5e-delete-lock .trazzm-5e-delete-toggle {
+  background: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e-sheet.allow-delete .sheet-body .trazzm-5e-delete-lock .trazzm-5e-delete-toggle,
+.trazzm-5eDark .trazzm-5e-sheet .sheet-body .trazzm-5e-delete-lock .trazzm-5e-delete-toggle:hover {
+  background: var(--danger-500);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-controls a.item-delete {
+  color: var(--danger-500);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item-controls a.item-delete:hover {
+  color: var(--danger-700);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet [contenteditable=true]:empty:before {
+  color: var(--darkmode-tertiary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet [contenteditable=true],
+.trazzm-5eDark .trazzm-5e.sheet input[type="text"] {
+  border: none;
+  box-shadow: 0px 0px 0 3px transparent inset;
+  transition: box-shadow .3s ease;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet [contenteditable=true]:hover,
+.trazzm-5eDark .trazzm-5e.sheet [contenteditable=true]:focus,
+.trazzm-5eDark .trazzm-5e.sheet input[type="text"]:hover,
+.trazzm-5eDark .trazzm-5e.sheet input[type="text"]:focus {
+  border: none;
+  background: none;
+  box-shadow: 0px 0px 0 1px var(--darkmode-primary-accent) inset;
+}
+
+.trazzm-5eDark .trazzm-5e.sheet .filter-list .filter-item,
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-filters {
+  border-color: var(--darkmode-light-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet .filter-list .filter-item:hover,
+.trazzm-5eDark .trazzm-5e.sheet .filter-list .filter-item.active {
+  text-shadow: none;
+  color: var(--darkmode-primary-accent);
+  border-color: var(--darkmode-primary-accent); 
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list p.notes {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .origin-summary .proficiency {
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.skills-list li.skill .skill-proficiency,
+.trazzm-5eDark .trazzm-5e.sheet.actor ul.skills-list li.skill h4 {
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-name h4,
+.trazzm-5eDark .trazzm-5e.sheet.actor .favorites .inventory-list .item-name h4 {
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .rollable:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-recharge {
+  color: var(--darkmode-primary-color);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor .inventory-list .item .item-recharge:hover {
+  color: var(--darkmode-primary-accent);
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor a.entity-link, 
+.trazzm-5eDark .trazzm-5e.sheet.actor a.inline-roll {
+  background: var(--darkmode-primary-accent);
+  color: #121212; 
+}
+
+.trazzm-5eDark .trazzm-5e.sheet.actor a.entity-link i,
+.trazzm-5eDark .trazzm-5e.sheet.actor a.inline-roll i {
+  color: #121212;
+}
+
+.trazzm-5e-edit,
+.trazzm-5e-delete,
+.trazzm-5e-view {
+  color: var(--darkmode-primary-color);
+}

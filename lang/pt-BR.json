@@ -1,0 +1,76 @@
+{
+	"TRAZZM5E.EditActorImage": "Editar Imagem",
+
+	"TRAZZM5E.Exhaustion0": "Nenhum efeito negativo",
+	"TRAZZM5E.Exhaustion1": "Desvantagem em teste de Pericias",
+	"TRAZZM5E.Exhaustion2": "Metade do movimento",
+	"TRAZZM5E.Exhaustion3": "Desvantagem em jogadas de Ataque e Salvaguardas",
+	"TRAZZM5E.Exhaustion4": "Redução de Pontos de vida maximo à metade",
+	"TRAZZM5E.Exhaustion5": "Movimento reduzido a 0",
+	"TRAZZM5E.Exhaustion6": "Morto",
+
+	"TRAZZM5E.RestHint": "Fazer um Descanço",
+	"TRAZZM5E.RestS": "D. Curto",
+	"TRAZZM5E.RestL": "D. Longo",
+
+	"TRAZZM5E.AttrHitPoints": "Pontos de vida",
+
+	"TRAZZM5E.HitDiceHint": "Usar no Descanço",
+
+	"TRAZZM5E.Journal": "Diário",
+
+	"TRAZZM5E.SkillPassive": "Passiva",
+
+	"TRAZZM5E.RestoreOnRest": "Restaurar no Descanço",
+
+	"TRAZZM5E.BioTraits": "Traços",
+	"TRAZZM5E.BioIdeals": "Ideias",
+	"TRAZZM5E.BioBonds": "Vinculos",
+	"TRAZZM5E.BioFlaws": "Fraquesas",
+	"TRAZZM5E.BioAppearance": "Aparência",
+	"TRAZZM5E.BioBackground": "Histórico/Biografia",
+
+	"TRAZZM5E.JournalPoi": "Pessoas Importantes",
+	"TRAZZM5E.JournalLoi": "Locais Importantes",
+	"TRAZZM5E.JournalQuests": "Missões",
+	"TRAZZM5E.JournalMisc": "Diversos",
+	"TRAZZM5E.JournalEntries": "Entrada de Diário",
+
+	"TRAZZM5E.DeleteDisabled": "Remover Desabilitado",
+	"TRAZZM5E.DeleteEnabled": "Remover Habilitado",
+	"TRAZZM5E.DeleteDisabledHint": "exibir botão de remover item",
+	"TRAZZM5E.DeleteEnabledHint": "esconder botão de remover item",
+
+	"TRAZZM5E.ConvertCurrencyHint": "Converter moedas para a mais alta cunhagem",
+	"TRAZZM5E.ConvertCurrencyButton": "converter",
+
+	"TRAZZM5E.Encumbrance": "Sobrecarga",
+
+	"TRAZZM5E.EditSpell": "Editar Magia",
+	"TRAZZM5E.DeleteSpell": "Remover Magia",
+	"TRAZZM5E.AddFav": "Adicionar aos Favoritos",
+	"TRAZZM5E.RemoveFav": "Remover dos Favoritos",
+
+	"TRAZZM5E.ToggleInfo": "Alternar Informação",
+
+	"TRAZZM5E.Show" : "exibir/editar",
+	"TRAZZM5E.Hide" : "esconder",
+	"TRAZZM5E.Edit" : "edidar",
+	"TRAZZM5E.SkillsNotProficient" : "não proficiente",
+	"TRAZZM5E.TraitsEmpty" : "traços vazios",
+
+	"TRAZZM5E.AbbrArmorClass" : "CA",
+
+	"TRAZZM5E.strAbility" : "For",
+	"TRAZZM5E.dexAbility" : "Des",
+	"TRAZZM5E.conAbility" : "Con",
+	"TRAZZM5E.intAbility" : "Int",
+	"TRAZZM5E.wisAbility" : "Sab",
+	"TRAZZM5E.chaAbility" : "Car",
+
+	"TRAZZM5E.Abilities" : "Habilidades",
+
+	"TRAZZM5E.Environment" : "Ambiente",
+
+	"TRAZZM5E.AbbrMod" : "Mod"
+}

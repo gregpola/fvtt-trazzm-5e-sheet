@@ -1,0 +1,134 @@
+{
+	"TRAZZM5E.EditActorImage": "Edit Image",
+
+	"TRAZZM5E.Exhaustion0": "No negative effects",
+	"TRAZZM5E.Exhaustion1": "Disadvantage on Ability Checks",
+	"TRAZZM5E.Exhaustion2": "Speed halved",
+	"TRAZZM5E.Exhaustion3": "Disadvantage on Attack rolls and Saving Throws",
+	"TRAZZM5E.Exhaustion4": "Hit point maximum halved",
+	"TRAZZM5E.Exhaustion5": "Speed reduced to 0",
+	"TRAZZM5E.Exhaustion6": "Death",
+
+	"TRAZZM5E.RestHint": "Take A Rest",
+	"TRAZZM5E.RestS": "Short Rest",
+	"TRAZZM5E.RestL": "Long Rest",
+
+	"TRAZZM5E.ArmorClass": "AC",
+	"TRAZZM5E.AttrHitPoints": "Hit Points",
+	"TRAZZM5E.Exp": "EXP",
+	"TRAZZM5E.Level": "Level",
+	"TRAZZM5E.Proficiencies": "Proficiencies",
+	"TRAZZM5E.Proficiency": "Proficiency",
+	"TRAZZM5E.SaveProficiency": "Save Proficient",
+
+	"TRAZZM5E.Advantage": "Advantage",
+	"TRAZZM5E.Disadvantage": "Disadvantage",
+
+	"TRAZZM5E.HitDiceHint": "Use on Rest",
+
+	"TRAZZM5E.Journal": "Journal",
+
+	"TRAZZM5E.SkillPassive": "Passive",
+
+	"TRAZZM5E.RestoreOnRest": "Restore on rest",
+
+	"TRAZZM5E.Background": "Background",
+
+	"TRAZZM5E.BioTraits": "Traits",
+	"TRAZZM5E.BioIdeals": "Ideals",
+	"TRAZZM5E.BioBonds": "Bonds",
+	"TRAZZM5E.BioFlaws": "Flaws",
+	"TRAZZM5E.BioAppearance": "Appearance",
+	"TRAZZM5E.BioBackground": "Background/Biography",
+	"TRAZZM5E.BioPersonality": "Personality",
+
+	"TRAZZM5E.Characteristics": "Characteristics",
+	"TRAZZM5E.ManageCharacteristics": "Manage Characteristics",
+	"TRAZZM5E.Gender": "Gender",
+	"TRAZZM5E.Eyes": "Eyes",
+	"TRAZZM5E.Size": "Size",
+	"TRAZZM5E.Height": "Height",
+	"TRAZZM5E.Weight": "Weight",
+	"TRAZZM5E.Faith": "Faith",
+	"TRAZZM5E.Hair": "Hair",
+	"TRAZZM5E.Skin": "Skin",
+	"TRAZZM5E.Age": "Age",
+	"TRAZZM5E.Homeland": "Homeland",
+
+	"TRAZZM5E.JournalPoi": "Persons of Interest",
+	"TRAZZM5E.JournalLoi": "Locations of Interest",
+	"TRAZZM5E.JournalQuests": "Quests",
+	"TRAZZM5E.JournalMisc": "Miscellaneous",
+	"TRAZZM5E.JournalEntries": "Journal Entries",
+
+	"TRAZZM5E.DeleteDisabled": "Delete Disabled",
+	"TRAZZM5E.DeleteEnabled": "Delete Enabled",
+	"TRAZZM5E.DeleteDisabledHint": "show item delete button",
+	"TRAZZM5E.DeleteEnabledHint": "hide item delete button",
+
+	"TRAZZM5E.ConvertCurrencyHint": "convert currency to highest coinage",
+	"TRAZZM5E.ConvertCurrencyButton": "convert",
+
+	"TRAZZM5E.Encumbrance": "Encumbrance",
+
+	"TRAZZM5E.EditSpell": "Edit Spell",
+	"TRAZZM5E.DeleteSpell": "Delete Spell",
+	"TRAZZM5E.AddFav": "Add to Favorites",
+	"TRAZZM5E.RemoveFav": "Remove from Favorites",
+
+	"TRAZZM5E.ToggleInfo": "Toggle Info",
+
+	"TRAZZM5E.Show" : "Show/Edit",
+	"TRAZZM5E.Hide" : "Hide",
+	"TRAZZM5E.Edit" : "EDIT",
+	"TRAZZM5E.SkillsNotProficient" : "Not proficient",
+	"TRAZZM5E.TraitsEmpty" : "Empty traits",
+
+	"TRAZZM5E.Conditions" : "Conditions",
+	"TRAZZM5E.Environment" : "Environment",
+	"TRAZZM5E.SpellAbility" : "Spellcasting Ability",
+	"TRAZZM5E.SpellDC" : "Spell Save DC",
+
+	"TRAZZM5E.AbbrArmorClass" : "AC",
+	"TRAZZM5E.AbbrMod" : "Mod",
+
+	"TRAZZM5E.Abilities" : "Abilities",
+	"TRAZZM5E.strAbility" : "Str",
+	"TRAZZM5E.dexAbility" : "Dex",
+	"TRAZZM5E.conAbility" : "Con",
+	"TRAZZM5E.intAbility" : "Int",
+	"TRAZZM5E.wisAbility" : "Wis",
+	"TRAZZM5E.chaAbility" : "Cha",
+
+	"TRAZZM5E.Class-art": "Artificer",
+	"TRAZZM5E.Class-brb": "Barbarian",
+	"TRAZZM5E.Class-brd": "Bard",
+	"TRAZZM5E.Class-clr": "Cleric",
+	"TRAZZM5E.Class-drd": "Druid",
+	"TRAZZM5E.Class-fgt": "Fighter",
+	"TRAZZM5E.Class-mnk": "Monk",
+	"TRAZZM5E.Class-pal": "Paladin",
+	"TRAZZM5E.Class-rng": "Ranger",
+	"TRAZZM5E.Class-rog": "Rogue",
+	"TRAZZM5E.Class-src": "Sorcerer",
+	"TRAZZM5E.Class-war": "Warlock",
+	"TRAZZM5E.Class-wiz": "Wizard",
+
+	"TRAZZM5E.Alignment-lg": "Lawful Good",
+	"TRAZZM5E.Alignment-ln": "Lawful Neutral",
+	"TRAZZM5E.Alignment-le": "Lawful Evil",
+	"TRAZZM5E.Alignment-ng": "Neutral Good",
+	"TRAZZM5E.Alignment-n": "Neutral",
+	"TRAZZM5E.Alignment-ne": "Neutral Evil",
+	"TRAZZM5E.Alignment-cg": "Chaotic Good",
+	"TRAZZM5E.Alignment-cn": "Chaotic Neutral",
+	"TRAZZM5E.Alignment-ce": "Chaotic Evil",
+
+	"TRAZZM5E.Size-tiny": "Tiny",
+	"TRAZZM5E.Size-sm": "Small",
+	"TRAZZM5E.Size-med": "Medium",
+	"TRAZZM5E.Size-lg": "Large",
+	"TRAZZM5E.Size-huge": "Huge",
+	"TRAZZM5E.Size-grg": "Gargantuan"
+
+}

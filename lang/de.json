@@ -1,0 +1,76 @@
+{
+	"TRAZZM5E.EditActorImage": "Bild bearbeiten",
+
+	"TRAZZM5E.Exhaustion0": "Kein negativer Effekt",
+	"TRAZZM5E.Exhaustion1": "Nachteil auf Fähigkeitsproben",
+	"TRAZZM5E.Exhaustion2": "Bewegung halbiert",
+	"TRAZZM5E.Exhaustion3": "Nachteil auf Angriffswürfe und Rettungswürfe",
+	"TRAZZM5E.Exhaustion4": "Maximale Trefferpunkte halbiert",
+	"TRAZZM5E.Exhaustion5": "Bewegung auf 0 reduziert",
+	"TRAZZM5E.Exhaustion6": "Tod",
+
+	"TRAZZM5E.RestHint": "Mach eine Rast",
+	"TRAZZM5E.RestS": "Kurze Rast",
+	"TRAZZM5E.RestL": "Lange Rast",
+
+	"TRAZZM5E.AttrHitPoints": "Trefferpunkte",
+
+	"TRAZZM5E.HitDiceHint": "bei Rast nutzen",
+
+	"TRAZZM5E.Journal": "Tagebuch",
+
+	"TRAZZM5E.SkillPassive": "Passiv",
+
+	"TRAZZM5E.RestoreOnRest": "Bei Rast erneuern",
+
+	"TRAZZM5E.BioTraits": "Merkmale",
+	"TRAZZM5E.BioIdeals": "Ideale",
+	"TRAZZM5E.BioBonds": "Bindungen",
+	"TRAZZM5E.BioFlaws": "Mängel",
+	"TRAZZM5E.BioAppearance": "Erscheinung",
+	"TRAZZM5E.BioBackground": "Hintergrund/Biografie",
+
+	"TRAZZM5E.JournalPoi": "Interessante Persönlichkeiten",
+	"TRAZZM5E.JournalLoi": "Interessante Orte",
+	"TRAZZM5E.JournalQuests": "Aufträge",
+	"TRAZZM5E.JournalMisc": "Verschiedenes",
+	"TRAZZM5E.JournalEntries": "Tagebucheinträge",
+
+	"TRAZZM5E.DeleteDisabled": "Löschen deaktiviert",
+	"TRAZZM5E.DeleteEnabled": "Löschen aktiviert",
+	"TRAZZM5E.DeleteDisabledHint": "Zeige Löschen-Knopf",
+	"TRAZZM5E.DeleteEnabledHint": "Verstecke Löschen-Knopf",
+
+	"TRAZZM5E.ConvertCurrencyHint": "Währung in höchste Einheit konvertieren",
+	"TRAZZM5E.ConvertCurrencyButton": "konvertieren",
+
+	"TRAZZM5E.Encumbrance": "Belastung",
+
+	"TRAZZM5E.EditSpell": "Zauber bearbeiten",
+	"TRAZZM5E.DeleteSpell": "Zauber löschen",
+	"TRAZZM5E.AddFav": "Zu Favoriten hinzufügen",
+	"TRAZZM5E.RemoveFav": "Aus Favoriten entfernen",
+
+	"TRAZZM5E.ToggleInfo": "Infos umschalten",
+
+	"TRAZZM5E.Show" : "zeige/editiere",
+	"TRAZZM5E.Hide" : "verstecke",
+	"TRAZZM5E.Edit" : "editiere",
+	"TRAZZM5E.SkillsNotProficient" : "ungeübte",
+	"TRAZZM5E.TraitsEmpty" : "leere",
+
+	"TRAZZM5E.AbbrArmorClass" : "RK",
+
+	"TRAZZM5E.strAbility" : "Stä",
+	"TRAZZM5E.dexAbility" : "Gew",
+	"TRAZZM5E.conAbility" : "Kon",
+	"TRAZZM5E.intAbility" : "Int",
+	"TRAZZM5E.wisAbility" : "Wei",
+	"TRAZZM5E.chaAbility" : "Cha",
+
+	"TRAZZM5E.Abilities" : "Fähigkeiten",
+
+	"TRAZZM5E.Environment" : "Umgebung",
+
+	"TRAZZM5E.AbbrMod" : "Mod"
+}

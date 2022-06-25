@@ -1,0 +1,81 @@
+<form class="trazzm-5e" autocomplete="off">
+    <div class="trazzm-characteristics-grid">
+        <div class="trazzm-char-grid-row">
+            <div class="trazzm-char-grid-col" style="width: 50%;" title="{{localize 'DND5E.Alignment'}}">
+                <h4>{{localize 'DND5E.Alignment'}}</h4>
+                <select name="data.details.alignment">
+                    {{#select data.details.alignment}}
+                    {{#each TrazzmRules.ALIGNMENTS}}
+                    <option value="{{this}}">{{i18n-join 'TRAZZM5E.Alignment-' this}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 50%;" title="{{localize 'TRAZZM5E.Faith'}}">
+                <h4>{{localize 'TRAZZM5E.Faith'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Faith'}}"
+                       value="{{data.details.faith}}" name="data.details.faith">
+            </div>
+
+        </div>
+
+        <div class="trazzm-char-grid-row">
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Gender'}}">
+                <h4>{{localize 'TRAZZM5E.Gender'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Gender'}}"
+                       value="{{data.details.gender}}" name="data.details.gender">
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Age'}}">
+                <h4>{{localize 'TRAZZM5E.Age'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Age'}}"
+                       name="data.details.age" value="{{data.details.age}}">
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Height'}}">
+                <h4>{{localize 'TRAZZM5E.Height'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Height'}}"
+                       name="data.details.height" value="{{data.details.height}}">
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Weight'}}">
+                <h4>{{localize 'TRAZZM5E.Weight'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Weight'}}"
+                       name="data.details.weight" value="{{data.details.weight}}">
+            </div>
+
+        </div>
+
+        <div class="trazzm-char-grid-row">
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Size'}}">
+                <h4>{{localize 'TRAZZM5E.Size'}}</h4>
+                <select name="data.traits.size">
+                    {{#select data.traits.size}}
+                    {{#each config.actorSizes}}
+                    <option value="{{@key}}">{{i18n-join 'TRAZZM5E.Size-' @key}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Hair'}}">
+                <h4>{{localize 'TRAZZM5E.Hair'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Hair'}}"
+                       value="{{data.details.hair}}" name="data.details.hair">
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Skin'}}">
+                <h4>{{localize 'TRAZZM5E.Skin'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Skin'}}"
+                       value="{{ata.details.skin}}" name="ata.details.skin">
+            </div>
+
+            <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Eyes'}}">
+                <h4>{{localize 'TRAZZM5E.Eyes'}}</h4>
+                <input type="text" class="trazzm-5e-input-compact" placeholder="{{localize 'TRAZZM5E.Eyes'}}"
+                       value="{{data.details.eyes}}" name="data.details.eyes">
+            </div>
+        </div>
+    </div>
+</form>

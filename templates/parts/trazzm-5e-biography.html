@@ -1,0 +1,114 @@
+<div class="left-notes note-entries">
+
+    <article>
+        <div class="flexrow section-titles" >
+            <h3 style="font-size: 13px; font-weight: 700;">{{ localize "TRAZZM5E.Characteristics" }}</h3>
+
+            <a title="{{localize 'TRAZZM5E.ManageCharacteristics'}}"
+               class="trazzm-5e-edit trazzm-simple-dialog trazzm-edit-btn"
+               data-template="characteristics.html"
+               data-width="450"
+               data-title="{{localize 'TRAZZM5E.ManageCharacteristics'}}">
+                {{localize 'TRAZZM5E.Edit'}}
+            </a>
+        </div>
+
+        <div class="trazzm-characteristics-grid">
+            <div class="trazzm-char-grid-row">
+                <div class="trazzm-char-grid-col" style="width: 50%;" title="{{localize 'DND5E.Alignment'}}">
+                    <h4>{{localize 'DND5E.Alignment'}}</h4>
+                    {{i18n-join 'TRAZZM5E.Alignment-' data.details.alignment}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 50%;" title="{{localize 'TRAZZM5E.Faith'}}">
+                    <h4>{{localize 'TRAZZM5E.Faith'}}</h4>
+                    {{data.details.faith}}
+                </div>
+
+            </div>
+
+            <div class="trazzm-char-grid-row">
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Gender'}}">
+                    <h4>{{localize 'TRAZZM5E.Gender'}}</h4>
+                    {{data.details.gender}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Age'}}">
+                    <h4>{{localize 'TRAZZM5E.Age'}}</h4>
+                    {{data.details.age}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Height'}}">
+                    <h4>{{localize 'TRAZZM5E.Height'}}</h4>
+                    {{data.details.height}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Weight'}}">
+                    <h4>{{localize 'TRAZZM5E.Weight'}}</h4>
+                    {{data.details.weight}}
+                </div>
+
+            </div>
+
+            <div class="trazzm-char-grid-row">
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Size'}}">
+                    <h4>{{localize 'TRAZZM5E.Size'}}</h4>
+                    {{i18n-join 'TRAZZM5E.Size-' data.traits.size}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Hair'}}">
+                    <h4>{{localize 'TRAZZM5E.Hair'}}</h4>
+                    {{data.details.hair}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Skin'}}">
+                    <h4>{{localize 'TRAZZM5E.Skin'}}</h4>
+                    {{data.details.skin}}
+                </div>
+
+                <div class="trazzm-char-grid-col" style="width: 25%;" title="{{localize 'TRAZZM5E.Eyes'}}">
+                    <h4>{{localize 'TRAZZM5E.Eyes'}}</h4>
+                    {{data.details.eyes}}
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioAppearance" }}</div>
+        {{editor content=data.details.description.value target="data.details.description.value"
+        button=true owner=owner editable=editable}}
+    </article>
+
+    <article>
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioIdeals" }}</div>
+        {{editor content=data.details.ideal target="data.details.ideal" button=true owner=owner
+        editable=editable}}
+    </article>
+
+    <article>
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioBonds" }}</div>
+        {{editor content=data.details.bond target="data.details.bond" button=true owner=owner
+        editable=editable}}
+    </article>
+
+    <article>
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioFlaws" }}</div>
+        {{editor content=data.details.flaw target="data.details.flaw" button=true owner=owner
+        editable=editable}}
+    </article>
+</div>
+
+<div class="right-notes note-entries">
+    <article style="height: 33%;">
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioPersonality" }}</div>
+        {{editor content=data.details.trait target="data.details.trait" button=true owner=owner
+        editable=editable}}
+    </article>
+
+    <article style="height: 67%;">
+        <div class="section-titles biopage">{{ localize "TRAZZM5E.BioBackground" }}</div>
+        {{editor content=data.details.biography target="data.details.biography" button=true
+        owner=owner editable=editable}}
+    </article>
+</div>

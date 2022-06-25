@@ -1,0 +1,258 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+    <div class="trazzm-5e-npc{{#if actor.flags.trazzm-5e-sheet.allow-delete}} allow-delete{{/if}}">
+        {{!-- NPC Sheet Header --}}
+        <header class="trazzm-5e-header-npc">
+            <div class="trazzm-5e-npc-profile">
+                {{!-- Portrait --}}
+                <div class="portrait">
+                    <img class="player-image" src="{{actor.img}}" alt="{{actor.name}}" title="{{localize 'TRAZZM5E.EditActorImage'}}" data-edit="img"/>
+                </div>
+
+                {{!-- HP Overlay --}}
+                <div class="hp-overlay"
+                     style="background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) calc(100% - ((100% / {{data.attributes.hp.max}}) * {{data.attributes.hp.value}}) ), rgba(255,255,255,1) calc(100% - ((100% / {{data.attributes.hp.max}}) * {{data.attributes.hp.value}}) ), rgba(255,255,255,1) 100%);">
+                </div>
+            </div>
+
+            {{!-- Character Details --}}
+            <div class="flex trazzm-5e-npc-details">
+                <section class="trazzm-5e-npc-general-information">
+                    <div class="flex npc-name-race">
+                        <!-- Name -->
+                        <div class="flexrow trazzm-5e-npc-name">
+                            <input data-input="{{actor._id}}-name" name="name" type="hidden" value="{{actor.name}}"
+                                   placeholder="{{ localize 'DND5E.Name' }}" maxlength="40">
+                            <h1 class="char-name" style="border: none; margin-bottom: 3px;" contenteditable="true"
+                                spellcheck="false" data-target="{{actor._id}}-name"
+                                data-placeholder="{{ localize 'DND5E.Name' }}" data-maxlength="40">{{actor.name}}</h1>
+
+                            <!-- Challenge Rating -->
+                            <aside class="header-exp trazzm-5e-npc-challenge" style="flex-basis: 100px;">
+                                <div class="cr">
+                                    <label>{{ localize "DND5E.AbbreviationCR" }}</label>
+                                    <input style="width: 50px;" name="data.details.cr" type="text" value="{{labels.cr}}" placeholder="0" maxlength="4">
+                                </div>
+                            </aside>
+                        </div>
+
+                        <!-- Type -->
+                        <div class="flexrow trazzm-5e-npc-type">
+                            <div class="trazzm-char-grid-col" title="{{localize 'TRAZZM5E.Size'}}">
+                                <select name="data.traits.size">
+                                    {{#select data.traits.size}}
+                                    {{#each config.actorSizes}}
+                                    <option value="{{@key}}">{{i18n-join 'TRAZZM5E.Size-' @key}}</option>
+                                    {{/each}}
+                                    {{/select}}
+                                </select>
+                            </div>
+
+                            <div class="trazzm-char-grid-col" title="{{localize 'DND5E.Type'}}">
+                                <!-- TODO Update this to a select once there is support in the 5e system -->
+                                <span contenteditable="true" spellcheck="true" data-target="{{actor._id}}-type"
+                                      data-placeholder="{{ localize 'DND5E.Type' }}">{{data.details.type}}</span>
+                                <input type="hidden" data-input="{{actor._id}}-type" name="data.details.type"
+                                       value="{{data.details.type}}" placeholder="{{ localize 'DND5E.Type' }}">
+                            </div>
+
+                            <!-- TODO Environment ??? -->
+
+                            <!-- Alignment -->
+                            <span class="flex" contenteditable="true" spellcheck="false" title="{{localize 'DND5E.Alignment'}}"
+                                  data-target="{{actor._id}}-alignment"
+                                  data-placeholder="{{ localize 'DND5E.Alignment' }}">{{data.details.alignment}}</span>
+                            <input type="hidden" data-input="{{actor._id}}-background" name="data.details.alignment"
+                                   value="{{data.details.alignment}}" placeholder="{{ localize 'DND5E.Alignment' }}"/>
+
+                            <!-- Experience points -->
+                            <aside class="header-exp trazzm-5e-npc-challenge" style="font-weight: normal; font-size: 10px; flex-basis: 100px;">
+                                <div class="experience">
+                                    <span>{{data.details.xp.value}} XP</span>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+
+                    {{!-- Header Attributes --}}
+                    <ul class="flexrow npc-header-attributes" style="list-style: none;">
+                        <!-- Proficiency Bonus -->
+                        <li class="npc-header-attribute">
+                            <h4 class="npc-attribute-name npc-box-title">{{ localize 'TRAZZM5E.Proficiency' }}</h4>
+                            <div class="prof-display">
+                                <p style="height: 32px; padding: 2px; margin: 0;">{{numberFormat data.attributes.prof decimals=0 sign=true}}</p>
+                            </div>
+                        </li>
+
+                        <!-- Initiative -->
+                        <li class="npc-header-attribute initiative">
+                            <h4 class="npc-attribute-name npc-box-title rollable" data-roll="abl" data-abl="init" draggable="true">
+                                {{ localize 'DND5E.Initiative' }}
+                            </h4>
+                            <div class="flexrow value">
+                                <p style="margin: 0;">{{numberFormat data.attributes.init.total decimals=0 sign=true}}</p>
+                            </div>
+                            <footer class="flexrow value-footer" style="font-weight: lighter;">
+                                <label for="{{actor._id}}-ini-mod">{{ localize 'TRAZZM5E.AbbrMod' }}</label>
+                                <input id="{{actor._id}}-ini-mod" class="ini-mod" name="data.attributes.init.value"
+                                       type="text" placeholder="0" data-dtype="Number"
+                                       value="{{numberFormat data.attributes.init.value decimals=0 sign=true}}"
+                                       maxlength="2">
+                            </footer>
+                        </li>
+
+                        <!-- Armor Class -->
+                        <li class="npc-header-attribute">
+                            <h4 class="npc-attribute-name npc-box-title">{{ localize 'TRAZZM5E.ArmorClass' }}</h4>
+                            <input class="ac-display" style="height: 32px;" name="data.attributes.ac.value" type="text"
+                                   value="{{data.attributes.ac.value}}" data-dtype="Number" placeholder="10" maxlength="2">
+                        </li>
+
+                        <!-- Hit Points -->
+                        <li class="npc-header-attribute">
+                            <h4 class="npc-attribute-name npc-box-title">{{ localize 'TRAZZM5E.AttrHitPoints' }}</h4>
+                            <div class="value npc-hp-display">
+                                <input class="hp-min" name="data.attributes.hp.value" type="text"
+                                       value="{{data.attributes.hp.value}}"
+                                       data-dtype="Number" placeholder="0" maxlength="3">
+                                <span class="value-seperator" style="padding-left: 1px; padding-right: 1px; flex-basis: auto;">/</span>
+                                <input class="hp-max" name="data.attributes.hp.max" type="text"
+                                       value="{{data.attributes.hp.max}}"
+                                       data-dtype="Number" placeholder="10" maxlength="3">
+                            </div>
+                            <footer class="flexrow value-footer" style="font-weight: lighter;">
+                                <input name="data.attributes.hp.temp" type="text" class="temphp"
+                                       placeholder="+{{ localize 'DND5E.Temp' }}"
+                                       value="{{data.attributes.hp.temp}}" data-dtype="{{data.attributes.hp.type}}"
+                                       maxlength="3">
+                                <input name="data.attributes.hp.tempmax" type="text" class="max-temphp"
+                                       placeholder="+{{ localize 'DND5E.Max' }}"
+                                       value="{{data.attributes.hp.tempmax}}" data-dtype="{{data.attributes.hp.type}}"
+                                       maxlength="3">
+                            </footer>
+                        </li>
+
+                        <!-- Speed -->
+                        <li class="npc-header-attribute">
+                            <h4 class="npc-attribute-name npc-box-title">{{ localize 'DND5E.Speed' }}</h4>
+                            <div class="value">
+                                <input name="data.attributes.speed.value" type="text"
+                                       value="{{data.attributes.speed.value}}" placeholder="0">
+                            </div>
+                            <footer class="flex value-footer" style="font-weight: lighter;">
+                                <input type="text" class="speed" name="data.attributes.speed.special"
+                                       value="{{data.attributes.speed.special}}"
+                                       placeholder="{{ localize 'DND5E.SpeedSpecial' }}">
+                            </footer>
+                        </li>
+                    </ul>
+
+                </section>
+            </div>
+        </header>
+
+        {{!-- NPC Sheet Navigation --}}
+        <nav class="flex trazzm-5e-navigation tabs" data-group="primary">
+            <a class="item active" style="padding-top: 3px;" data-tab="attributes">{{ localize "TRAZZM5E.Abilities" }}</a>
+            <a class="item" style="padding-top: 3px;" data-tab="features">{{ localize "DND5E.Features" }}</a>
+            <a class="item" style="padding-top: 3px;" data-tab="spellbook">{{ localize "DND5E.Spellbook" }}</a>
+            <a class="item" style="padding-top: 3px;" data-tab="biography">{{ localize "DND5E.Biography" }}</a>
+        </nav>
+
+        {{!-- PC Sheet Body --}}
+        <section class="sheet-body">
+
+            {{!-- Attributes Tab --}}
+            <div class="tab attributes flexrow" data-group="primary" data-tab="attributes">
+
+                {{!-- Ability Scores --}}
+                <ul class="npc-ability-scores">
+                    {{#each data.abilities as |ability id|}}
+                    <li class="ability {{#if ability.proficient}}proficient{{/if}}" data-ability="{{id}}">
+                        <h4 class="ability-name rollable" title="{{ability.label}}">{{ability.abbr}}</h4>
+                        <div class="flexrow value">
+                            <span class="ability-mod" title="{{ localize 'DND5E.AbilityModifier' }}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+                            <input class="ability-score" name="data.abilities.{{id}}.value" type="text" value="{{ability.value}}" data-dtype="Number" placeholder="10" maxlength="2">
+                            <span class="ability-save" title="{{ localize 'DND5E.ActionSave' }}">{{numberFormat ability.save decimals=0 sign=true}}</span>
+                        </div>
+                        <div class="ability-modifiers value-footer">
+                            <input type="hidden" name="data.abilities.{{id}}.proficient" value="{{ability.proficient}}" data-dtype="Number">
+                            <a class="proficiency-toggle ability-proficiency" title="{{ localize 'DND5E.Proficiency' }}">
+                                {{{ability.icon}}}</a>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+
+                {{!-- Skills --}}
+                <ul class="skills-list" style="margin: 3px;">
+                    {{#each data.skills as |skill s|}}
+                    <li class="skill flexrow {{#if skill.value}}proficient{{/if}}" data-skill="{{s}}">
+                        <input type="hidden" name="data.skills.{{s}}.value" value="{{skill.value}}"
+                               data-dtype="Number">
+                        <a class="proficiency-toggle skill-proficiency" title="{{skill.hover}}">{{{skill.icon}}}</a>
+                        <h4 class="skill-name rollable">{{skill.label}}</h4>
+                        <span class="skill-ability">{{skill.ability}}</span>
+                        <span class="skill-mod">{{numberFormat skill.total decimals=0 sign=true}}</span>
+                        <span class="skill-passive"
+                              title="{{skill.label}} ({{ localize 'TRAZZM5E.SkillPassive' }})">({{skill.passive}})</span>
+                    </li>
+                    {{/each}}
+                </ul>
+
+                <section class="npc-right-pane flexcol">
+
+                    {{!-- Legendary Actions --}}
+                    <div class="counters">
+                        <div class="counter flexrow legendary">
+                            <h4>{{ localize "DND5E.LegAct" }}</h4>
+                            <div class="counter-value">
+                                <input type="text" name="data.resources.legact.value" data-dtype="Number" placeholder="0"
+                                       value="{{data.resources.legact.value}}">
+                                <span class="sep">/</span>
+                                <input type="text" name="data.resources.legact.max" data-dtype="Number" placeholder="0"
+                                       value="{{data.resources.legact.max}}">
+                            </div>
+                        </div>
+                        <div class="counter flexrow legendary">
+                            <h4>{{ localize "DND5E.LegRes" }}</h4>
+                            <div class="counter-value">
+                                <input type="text" name="data.resources.legres.value" data-dtype="Number" placeholder="0"
+                                       value="{{data.resources.legres.value}}">
+                                <span class="sep">/</span>
+                                <input type="text" name="data.resources.legres.max" data-dtype="Number" placeholder="0"
+                                       value="{{data.resources.legres.max}}">
+                            </div>
+                        </div>
+                        <div class="counter flexrow lair">
+                            <h4>{{ localize "DND5E.LairAct" }}</h4>
+                            <div class="counter-value">
+                                <input name="data.resources.lair.value" type="checkbox" value="{{data.resources.lair.value}}"
+                                       data-dtype="Boolean" {{checked data.resources.lair.value}}>
+                                <input name="data.resources.lair.initiative" type="text" value="{{data.resources.lair.initiative}}"
+                                       data-dtype="Number" placeholder="Init.">
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- Traits --}}
+                    {{> "modules/trazzm-5e-sheet/templates/npc-parts/trazzm-5e-npc-traits.html"}}
+                </section>
+            </div>
+
+            {{!-- Features Tab --}}
+            <div class="tab features flexcol" data-group="primary" data-tab="features">
+                {{> "modules/trazzm-5e-sheet/templates/npc-parts/trazzm-5e-npc-features.html" sections=features}}
+            </div>
+
+            {{!-- Spellbook Tab --}}
+            <div class="tab spellbook flexcol" data-group="primary" data-tab="spellbook">
+                {{> "modules/trazzm-5e-sheet/templates/npc-parts/trazzm-5e-npc-spellbook.html"}}
+            </div>
+
+            {{!-- Biography Tab --}}
+            <div class="tab biography flexcol" data-group="primary" data-tab="biography">
+                {{editor content=data.details.biography.value target="data.details.biography.value" button=true owner=owner editable=editable}}
+            </div>
+        </section>
+    </div>
+</form>

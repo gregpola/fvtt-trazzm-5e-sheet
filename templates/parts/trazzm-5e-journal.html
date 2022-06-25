@@ -1,0 +1,41 @@
+<div class="left-notes note-entries">
+    <article>
+        <div class="section-titles">
+            <input type="text" name="data.details.notes1name" value="{{data.details.notes1name}}"
+                   placeholder="{{ localize 'TRAZZM5E.JournalPoi' }}"/>
+        </div>
+        {{editor content=data.details.notes1.value target="data.details.notes1.value" button=true
+        owner=owner editable=editable}}
+    </article>
+    <article>
+        <div class="section-titles">
+            <input type="text" name="data.details.notes2name" value="{{data.details.notes2name}}"
+                   placeholder="{{ localize 'TRAZZM5E.JournalLoi' }}"/>
+        </div>
+        {{editor content=data.details.notes2.value target="data.details.notes2.value" button=true
+        owner=owner editable=editable}}
+    </article>
+    <article>
+        <div class="section-titles">
+            <input type="text" name="data.details.notes3name" value="{{data.details.notes3name}}"
+                   placeholder="{{ localize 'TRAZZM5E.JournalQuests' }}"/>
+        </div>
+        {{editor content=data.details.notes3.value target="data.details.notes3.value" button=true
+        owner=owner editable=editable}}
+    </article>
+    <article>
+        <div class="section-titles">
+            <input type="text" name="data.details.notes4name" value="{{data.details.notes4name}}"
+                   placeholder="{{ localize 'TRAZZM5E.JournalMisc' }}"/>
+        </div>
+        {{editor content=data.details.notes4.value target="data.details.notes4.value" button=true
+        owner=owner editable=editable}}
+    </article>
+</div>
+<div class="right-notes note-entries">
+    <article class="journal-notes">
+        <div class="section-titles">{{ localize 'TRAZZM5E.JournalEntries' }}</div>
+        {{editor content=data.details.notes.value target="data.details.notes.value" button=true
+        owner=owner editable=editable}}
+    </article>
+</div>
