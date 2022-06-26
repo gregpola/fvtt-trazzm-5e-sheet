@@ -39,9 +39,13 @@
 		}
 	],
 	"socket": false,
+	"flags": {
+		"allowBugReporter": true
+	},
 	"url": "https://github.com/gregpola/fvtt-trazzm-5e-sheet",
-	"manifest": "https://raw.githubusercontent.com/gregpola/fvtt-trazzm-5e-sheet/main/module.json",
+	"manifest": "https://raw.githubusercontent.com/gregpola/fvtt-trazzm-5e-sheet/releases/latest/download/module.json",
 	"changelog": "https://raw.githubusercontent.com/gregpola/fvtt-trazzm-5e-sheet/main/changelog.md",
 	"readme": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/README.md",
-	"bugs": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/issues"
+	"bugs": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/issues",
+	"download": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/releases/latest/download/module.zip"
 }
