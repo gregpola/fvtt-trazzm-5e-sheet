@@ -4,8 +4,8 @@ import ActorSheet5eCharacter from "../../systems/dnd5e/module/actor/sheets/chara
 
 import {preloadTrazzm5eHandlebarsTemplates} from "./templates/trazzm-5e-templates.js";
 import {addFavorites} from "./trazzm-5e-favorites.js";
-import {Rules} from './js/rules.js';
-import {TrazzmDialog} from './js/dialog.js';
+import {Rules} from './scripts/rules.js';
+import {TrazzmDialog} from './scripts/dialog.js';
 
 export const TRAZZM5E = {};
 TRAZZM5E.Rules = Rules;
@@ -14,7 +14,7 @@ let position = 0;
 
 // handlebar helper compare string
 Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
-    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+    return (arg1 === arg2) ? options.fn(this) : options.inverse(this);
 });
 
 TRAZZM5E.notDefinedOrEmpty = function (obj) {

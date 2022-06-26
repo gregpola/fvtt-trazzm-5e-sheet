@@ -2,11 +2,18 @@
 	"name": "trazzm-5e-sheet",
 	"title": "Trazzm's 5e Sheet",
 	"description": "Replaces the default D&D 5e character and NPC sheet with an alternate layout focused on a more condensed UI",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"author": "Trazzm",
-	"minimumCoreVersion": "0.6.0",
-	"compatibleCoreVersion": "0.6.4",
+	"minimumCoreVersion": "0.7.0",
+	"compatibleCoreVersion": "9",
+	"packs": [],
 	"systems": ["dnd5e"],
+	"dependencies": [
+		{
+			"name": "dnd5e",
+			"type": "system"
+		}
+	],
 	"esmodules": [
 		"./trazzm-5e-sheet.js",
 		"./trazzm-5e-favorites.js",
@@ -30,5 +37,11 @@
 			"name": "English",
 			"path": "lang/en.json"
 		}
-	]
+	],
+	"socket": false,
+	"url": "https://github.com/gregpola/fvtt-trazzm-5e-sheet",
+	"manifest": "https://raw.githubusercontent.com/gregpola/fvtt-trazzm-5e-sheet/main/module.json",
+	"changelog": "https://raw.githubusercontent.com/gregpola/fvtt-trazzm-5e-sheet/main/changelog.md",
+	"readme": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/README.md",
+	"bugs": "https://github.com/gregpola/fvtt-trazzm-5e-sheet/issues"
 }

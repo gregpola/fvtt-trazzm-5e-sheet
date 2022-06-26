@@ -226,13 +226,13 @@
   background-repeat: no-repeat;
   background-position: center;
 	background-size: 70%;
-  background-image: url(../images/d20-333.svg) !important;
+  background-image: url(../artwork/d20-333.svg) !important;
   cursor: pointer;
 }
 
 .trazzm-5e.sheet.actor .magic-items-feats-content .item-name:hover .magic-item-image:hover,
 .trazzm-5e.sheet.actor .magic-items-spells-content .item-name:hover .magic-item-image:hover {
-  background-image: url(../images/d20-highlight.svg) !important;
+  background-image: url(../artwork/d20-highlight.svg) !important;
 }
 
 /* Magic Item Sheet */

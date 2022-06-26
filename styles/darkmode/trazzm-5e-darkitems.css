@@ -204,7 +204,7 @@
 .trazzm-5eDark .dnd5e.sheet.item .sheet-body input[type="checkbox"] {
   border: 1px solid var(--darkmode-secondary-color); 
   box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
-  background-image: url(../../images/check-darkmode.svg);
+  background-image: url(../../artwork/check-darkmode.svg);
 }
 
 .trazzm-5eDark .dnd5e.sheet.item .sheet-body label input[type="checkbox"] {
@@ -214,7 +214,7 @@
 
 .trazzm-5eDark .dnd5e.sheet.item .sheet-body input[type="checkbox"]:checked {
 	background-color: var(--darkmode-primary-accent);
-  background-image: url(../../images/check-darkmode-checked.svg);
+  background-image: url(../../artwork/check-darkmode-checked.svg);
 }
 
 .trazzm-5eDark .dnd5e.sheet.item .sheet-body label input[type="checkbox"]:checked {

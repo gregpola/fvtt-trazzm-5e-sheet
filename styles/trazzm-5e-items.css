@@ -486,7 +486,7 @@
   border: 1px solid var(--default-tertiary-color); 
   box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
   border-radius: 3px;
-  background-image: url(../images/check-default.svg);
+  background-image: url(../artwork/check-default.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
@@ -500,7 +500,7 @@
 
 .dnd5e.sheet.item .sheet-body input[type="checkbox"]:checked {
 	background-color: rgba(0,255,0,.3);
-  background-image: url(../images/check-default-checked.svg);
+  background-image: url(../artwork/check-default-checked.svg);
 }
 
 .dnd5e.sheet.item .sheet-body label input[type="checkbox"]:checked {

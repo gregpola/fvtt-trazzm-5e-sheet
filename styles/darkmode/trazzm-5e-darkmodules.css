@@ -79,12 +79,12 @@
 
 .trazzm-5eDark .trazzm-5e.sheet.actor .magic-items-feats-content .item-name:hover .magic-item-image,
 .trazzm-5eDark .trazzm-5e.sheet.actor .magic-items-spells-content .item-name:hover .magic-item-image {
-  background-image: url(../../images/d20-444.svg) !important;
+  background-image: url(../../artwork/d20-444.svg) !important;
 }
 
 .trazzm-5eDark .trazzm-5e.sheet.actor .magic-items-feats-content .item-name:hover .magic-item-image:hover,
 .trazzm-5eDark .trazzm-5e.sheet.actor .magic-items-spells-content .item-name:hover .magic-item-image:hover {
-  background-image: url(../../images/d20-highlight-green.svg) !important;
+  background-image: url(../../artwork/d20-highlight-green.svg) !important;
 }
 
 /* Magic Item Sheet */
