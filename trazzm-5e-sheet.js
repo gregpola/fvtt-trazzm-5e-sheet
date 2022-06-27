@@ -37,10 +37,9 @@ export class Trazzm5eSheet extends ActorSheet5eCharacter {
         });
     }
 
-    getData () {
+    getData() {
         const data = super.getData();
         data.TrazzmRules = TRAZZM5E.Rules;
-        // data.actor.obsidian.attacks.forEach(this._reifyAttackLinks, this);
         console.debug(data);
         return data;
     }

@@ -1,4 +1,4 @@
-export class TrazzmDialog extends BaseEntitySheet {
+export class TrazzmDialog extends DocumentSheet {
 	constructor (parent, options = {register: false}) {
 		super(parent.object, options);
 		this.parent = parent;

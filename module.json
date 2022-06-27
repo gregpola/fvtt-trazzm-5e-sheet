@@ -2,7 +2,7 @@
 	"name": "trazzm-5e-sheet",
 	"title": "Trazzm's 5e Sheet",
 	"description": "Replaces the default D&D 5e character and NPC sheet with an alternate layout focused on a more condensed UI",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "Trazzm",
 	"minimumCoreVersion": "0.7.0",
 	"compatibleCoreVersion": "9",
